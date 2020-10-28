@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forums</title>
+	<link rel="stylesheet" href="detail.css">
+</head>
+<body>
+
+	<div id="header">
+	<nav>
+	<ul>
+		<img src="forums-header-logo.png"width=200px height 200px >
+		<li><a href = "home.html"><< Back to Home</a></li>
+	
+
+	</ul>
+</nav>
+</div>
+
+<div id="k1">
+	<h3>How to find the first non repeated character of a given String?</h3>
+	<p>The answer is d.So the point that strikes me is that it can be done in two ways. For every index i loop i-1 times and check if that character occur ever again. But this is not efficiet: growth of this method is O(N^2) where N is the lenght of the string. Another possible good way could be if i could form a tree or any other ds such that i could order the character based on the weights(the occurence count).This could take me just one loop of lenght N throught the string to form the structure. That is just O(N) + O(time to build tree or any ds)</p>
+	<div id="oke">
+	Viewed 624 times<br>
+	3 answers submitted 
+	</div>
+	<img id="foto1" src="profile_male.jpg" width=50px height="50px">
+	Mary Ham
+</div>
+<div id="kl">
+<div id="k2">
+	<img id="foto" src="profile_male.jpg" width=50px height="50px">
+	Poppy Harlow
+	<p>Here's a very straightforward O(n) solution: def fn(s);order =[] counts ={} for x in s:if x in counts:counts[x]=1 order append(x) for x in order: if counts[x]==1 return x return none. We loop through the string once.When we come across a new character. We store it in counts with a value of 1 and append it to order.When we come across a character we've seen before,we increment its value in counts.Finally,we loop through order until we find a character with a vlue of 1 in counts an return it</p>
+
+</div>
+<div id="k3">
+	<img id="foto" src="profile_male.jpg" width=50px height="50px">
+	Gloria Borger
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div id="k4">
+	<img id="foto" src="profile_male.jpg" width=50px height="50px">
+	Poppy Gloria
+	<p>A list comprehensio will give you the characters in the order they appear once in[61] s='aabccbdcbe' in[62] [] a for a in s if s.count(a)==1] Out[62]['d','e'] Then just return first entry of this in[63] [ a for a in s if s.count(a)==1[0].Out[63]'d' if you just need the first entry. agenerator would work as well.in[69] ( a for a in s if s.count(a)==1) next()out[69]'d'</p>
+</div>
+</div>
+<div id="comment">
+	<textarea rows="6" cols="150" name="comment" form="usrform">
+	</textarea>
+	<button type ="button">Reply</button>
+</div>
+   
+
+</body>
+<footer>
+	 <div id="footer">
+	   Forums &copy Copyright 2019 by Vanessa Nathania
+	 </div>
+</footer>
+
+</html>

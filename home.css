@@ -1,0 +1,95 @@
+@media only screen and (width <= 535px) {
+.header
+ {
+
+    padding:0px;
+	background:white;
+	display:block;
+	width:100px;
+	height:50px;
+	position:fixed;
+  }
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 9px 9px 9px grey ;
+  position: fixed;
+  top:0px;
+  width: 105%;
+  margin-left: -15px;
+
+
+
+}
+li{
+	float: right;
+	margin-right: 70px
+}
+li a {
+  display:inline-block;
+  background-color: white;
+  float: right;
+  color: skyblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover{
+
+	background-color: dodgerblue;
+}
+
+#footer{
+ 	height:45px;
+	line-height:45px;
+	background:#2077db;
+	color:white;
+	position:relative;
+	bottom:0px;
+	width:110%;
+	margin-left: -20px;
+	text-align:center;
+	
+}
+
+.boxkecil{
+	margin: 0 auto;
+	position: relative;
+	background-color: white;
+	width: 600px;
+	height: 200px;
+	margin-top: 200px;
+	box-shadow: 1px 1px 1px 1px lightgrey;
+	border-radius: 35px;
+	margin-bottom: 250px;
+	
+}
+
+#line1{
+
+	font-family: arial;
+	color: dodgerblue;
+	text-align: left;
+	margin-left: 80px;
+
+}
+#line2{
+	font-family: arial;
+	color: dodgerblue;;
+	text-align: left;
+	margin-left: 80px;
+}
+#line3{
+	font-family: arial;
+	color: skyblue;;
+	text-align: right;
+	margin-right: 80px;
+}

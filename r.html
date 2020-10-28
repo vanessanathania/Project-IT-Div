@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Registrasi</title>
+	<link rel="stylesheet" href="r.css">
+</head>
+<body>
+
+	
+	<nav>
+	<ul>
+		<img src="forums-header-logo.png"width=200px height 200px >
+		
+		<li><a href = "home.html"><< Back to Home</a></li>
+	
+
+	</ul>
+</nav>
+	<div id="form">
+		<br><h1>Join Forums</h1>
+		<div id="Nama">
+			<b><label>What's your name ?</label></b><br>
+			<input type="text" id="txtName"placeholder="Enter your name">
+		</div>
+		<div id="Email">
+			<b><label>What's your email address?</label></b><br>
+			<input type="text" id="txtEmail"placeholder="Enter your email">
+		</div>
+		<div id="Phone">
+			<b><label> What's your phone number? </label></b><br>
+			<input type="text" id="txtPhone" placeholder="Enter your phone number">
+		</div>
+		
+		<div id="Address">
+			<b><label>Additional Information</label></b><br>
+			<label> Home Address </label><br>
+			<input type="text" id="txtAddress"placeholder="Enter your address">
+		</div>
+		<div id="Gender">
+			<label> Gender  </label>
+			<input type="radio" name="cbGender" id="cbMale" value ="Male"> Male
+			<input type="radio" name="cbGender" id="cbFemale" value ="Female"> Female
+		</div>
+		
+
+		<div id="Password">
+			<b><label>Set up your password</label><b><br>
+			<input type="Password" id="txtPassword" placeholder="Enter your password">
+		</div>
+		<div id="Submit">
+			<input onclick ="register()" type="button" id="btnsubmit" value="Submit">
+		</div>
+
+
+	</div>
+
+</body>
+<footer>
+	 <div id="footer">
+	   Forums &copy Copyright 2019 by Vanessa Nathania
+	 </div>
+</footer>
+</html>
+<script type="text/javascript">
+	function register(){
+		var error=false;
+		var nama= document.getElementById('txtName').value;
+		if(nama.length < 3){
+			alert("Name must be filled with minimal 3 character!");
+			error=true;
+		}
+		var phone= document.getElementById('txtPhone').value;
+		if(phone.length != 12 ){
+			alert("Invalid Phone number !");
+			error=true;
+		}
+		var Male= document.getElementById('cbMale').checked;
+		var Female= document.getElementById('cbFemale').checked;
+
+		if(!Male && !Female){
+			alert("Choose your Gender");
+			error=true;
+		}
+		var email=document.getElementById('txtEmail').value;
+		var extentionemail=document.getElementById('txtEmail').value.substring(email.length-4,email.length);
+		if(email==""){
+			alert("Fill your email");
+			error=true;
+		}else if(extentionemail !=".com"){
+			alert("Invalid Email");
+			error=true;
+		}
+		var address=document.getElementById('txtAddress').value;
+		if(address.length < 1){
+			alert("Fill your Address")
+		}
+		var pass = document.getElementById('txtPassword').value;
+		if(pass.length < 8){
+			alert("Password must be minimal 8 character");
+			error=true;
+		}
+		if(!error){
+			alert("Registration Success !");
+		}
+	}
+</script>
